@@ -2,12 +2,9 @@ import { Component } from "react";
 import "./search-panel.css";
 
 class SearchPanel extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      term: "",
-    };
-  }
+  state = {
+    term: "",
+  };
 
   onUpdateSearch = (e) => {
     const term = e.target.value;
